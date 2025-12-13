@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* 1. Define your Theme (Colors, Fonts, Animations) */
+@theme {
+  /* Colors */
+  --color-bg-dark: #0a0a0a;
+  --color-bg-card: #141414;
+  --color-accent: #ccff00; /* Your Neon Green */
+  --color-text-gray: #a0a0a0;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Fonts (Linked to layout.js) */
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Animations */
+  --animate-spin-slow: spin 12s linear infinite;
+  --animate-aura: pulseAura 4s infinite alternate;
+
+  /* Keyframes for Aura */
+  @keyframes pulseAura {
+    0% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+    100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
   }
 }
 
+/* 2. Custom Utility Classes */
+/* This replaces the .outline-text CSS class */
+@utility outline-text {
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+/* This replaces the .profile-fade CSS class */
+@utility profile-fade {
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+/* 3. Global Resets */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg-dark);
+  color: white;
 }
