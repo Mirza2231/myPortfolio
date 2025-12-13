@@ -3,6 +3,7 @@ import Image from 'next/image'
 import dashboardImage from '@/assests/Images/dashboardImage.jpg'
 import Ecomm from '@/assests/Images/Ecomm.jpg'
 import FoodApp from '@/assests/Images/FoodApp.jpg'
+import { FaArrowRight, FaLink,FaGithub   } from "react-icons/fa";
 
 
 const Projects = () => {
@@ -52,7 +53,7 @@ const projectsData = [
                         </h2>
                     </div>
                     <a href="https://github.com/yourusername" target="_blank" className="hidden md:flex items-center gap-2 text-text-gray hover:text-white transition-colors font-bold uppercase text-sm tracking-wider mt-6 md:mt-0">
-                        View GitHub <i className="fa-solid fa-arrow-right" />
+                        View GitHub <FaArrowRight  />
                     </a>
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -62,12 +63,13 @@ const projectsData = [
                         <div className="h-60 overflow-hidden relative">
                             {/* <img  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" /> */}
                             <Image
+                            alt='Project Image'
                             src={pData.image}
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                                <a href={pData.liveLink} className="w-10 h-10 bg-accent text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Live"><i className="fa-solid fa-link" /></a>
-                                <a href={pData.repoLink} className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Code"><i className="fa-brands fa-github" /></a>
+                                <a href={pData.liveLink} className="w-10 h-10 bg-accent text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Live"><FaLink /></a>
+                                <a href={pData.repoLink} className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Code"><FaGithub /></a>
                             </div>
                         </div>
                         <div className="p-6">

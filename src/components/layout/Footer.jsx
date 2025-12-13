@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaPaperPlane, FaGithub, FaLinkedin,FaInstagram    } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -14,7 +15,7 @@ const Footer = () => {
                     </p>
                     <a href="mailto:contact@faraz.dev" className="group relative inline-flex items-center justify-center gap-3 bg-accent text-black font-black uppercase tracking-widest py-5 px-12 rounded-full overflow-hidden transition-transform hover:scale-105 shadow-[0_0_40px_rgba(204,255,0,0.4)]">
                         <span className="relative z-10">Say Hello</span>
-                        <i className="fa-solid fa-paper-plane relative z-10 group-hover:translate-x-1 transition-transform" />
+                        <FaPaperPlane className=" relative z-10 group-hover:translate-x-1 transition-transform" />
                     </a>
                 </div>
                 <div className="mt-32 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto px-6">
@@ -23,10 +24,10 @@ const Footer = () => {
                         <p className="text-gray-600 text-xs">Built with Next.js &amp; Tailwind</p>
                     </div>
                     <div className="flex gap-8">
-                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><i className="fa-brands fa-github" /></a>
-                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><i className="fa-brands fa-linkedin" /></a>
-                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><i className="fa-brands fa-instagram" /></a>
-                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><i className="fa-brands fa-twitter" /></a>
+                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaGithub className="fa-brands fa-github" /></a>
+                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaLinkedin className="fa-brands fa-linkedin" /></a>
+                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaInstagram className="fa-brands fa-instagram" /></a>
+                        {/* <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><i className="fa-brands fa-twitter" /></a> */}
                     </div>
                 </div>
             </footer>

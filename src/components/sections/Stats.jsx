@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub,FaLinkedin, FaInstagram   } from "react-icons/fa";
 
 const Stats = () => {
     return (
@@ -23,13 +24,13 @@ const Stats = () => {
                         <span className="text-xs font-bold uppercase text-accent tracking-widest hidden lg:block">Connect</span>
                         <div className="flex gap-4">
                             <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
-                                <i className="fa-brands fa-github text-xl" />
+                                <FaGithub className=" text-xl" />
                             </a>
                             <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
-                                <i className="fa-brands fa-linkedin-in text-xl" />
+                                <FaLinkedin className="text-xl" />
                             </a>
                             <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
-                                <i className="fa-brands fa-instagram text-xl" />
+                                <FaInstagram className="text-xl" />
                             </a>
                         </div>
                     </div>
