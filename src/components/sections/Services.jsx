@@ -1,28 +1,28 @@
 import React from 'react'
-import { FaLayerGroup, FaCode, FaDatabase   } from "react-icons/fa";
+import { FaLayerGroup, FaCode, FaDatabase } from "react-icons/fa";
 
 const Services = () => {
 
-const servicesData = [
+    const servicesData = [
         {
             id: 1,
-            icon: FaLayerGroup ,
+            icon: FaLayerGroup,
             title: "Web Design",
             description: "Crafting captivating, user-friendly websites that align perfectly with your brand essence."
         },
         {
             id: 2,
-            icon: FaCode ,
+            icon: FaCode,
             title: "Web Development",
             description: "Transforming ideas into powerful, unified solutions with expert coding and robust architecture."
         },
         {
             id: 3,
-            icon: FaDatabase ,
+            icon: FaDatabase,
             title: "MERN Stack",
             description: "Full-stack development creating dynamic, high-performance web applications."
         },
-        
+
     ];
 
     return (
@@ -33,17 +33,17 @@ const servicesData = [
                     <p className="text-text-gray text-lg">High-end solutions for your business needs.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-{servicesData.map((service)=>(
-      <div key={service.id} className="bg-bg-card border border-neutral-800 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-accent hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)] group">
-                        <service.icon className="text-3xl text-white mb-5 transition-colors group-hover:text-accent" />
-                        <h3 className="text-2xl font-bold mb-4 font-heading uppercase">{service.title}</h3>
-                        <p className="text-text-gray leading-relaxed text-sm">{service.description}</p>
-                    </div>
+                    {servicesData.map((service) => (
+                         <div key={service.id} className="bg-bg-card border border-neutral-800 p-8 rounded-2xl transition-all duration-300 hover:-translate-y-2 hover:border-accent hover:shadow-[0_10px_40px_rgba(0,0,0,0.5)] group">
+                            <service.icon className="text-3xl text-white mb-5 transition-colors group-hover:text-accent" />
+                            <h3 className="text-2xl font-bold mb-4 font-heading uppercase">{service.title}</h3>
+                            <p className="text-text-gray leading-relaxed text-sm">{service.description}</p>
+                        </div>
 
-))}
+                    ))}
 
-              
-                   
+
+
                 </div>
             </section>
 
