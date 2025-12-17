@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import dashboardImage from '@/assests/Images/dashboardImage.jpg'
-import Ecomm from '@/assests/Images/Ecomm.jpg'
+import dumbells from '@/assests/Images/dumbells.jpg'
 import FoodApp from '@/assests/Images/FoodApp.jpg'
 import { FaArrowRight, FaLink,FaGithub   } from "react-icons/fa";
 
@@ -11,23 +11,23 @@ const Projects = () => {
 const projectsData = [
         {
             id: 1,
-            title: "Red Store",
-            category: "Full Stack E-Commerce",
-            image: Ecomm,
-            description: "A complete shopping platform with cart functionality, user authentication, and payment gateway integration.",
-            techStack: ["React", "Node", "MongoDB"],
-            liveLink: "#",
-            repoLink: "#"
+            title: "Body Mechanic",
+            category: "Gym Website",
+            image: dumbells,
+            description: "A modern, high-energy fitness landing page featuring a fully responsive design, trainer profiles, and membership pricing sections.",
+            techStack: ["Html", "Tailwind"],
+            liveLink: "https://bodymec.netlify.app/",
+            repoLink: "https://github.com/Mirza2231/BodyMechanic"
         },
         {
             id: 2,
-            title: "Admin Dash",
+            title: "Football Dash",
             category: "Analytics Panel",
             image: dashboardImage,
-            description: "Real-time data visualization dashboard for tracking sales, user metrics, and performance reports.",
+            description: "Real-time data visualization dashboard for tracking Players, Previous Matches, and team performances.",
             techStack: ["React.js", "Tailwind"],
-            liveLink: "#",
-            repoLink: "#"
+            liveLink: " https://lighthearted-baklava-c932bd.netlify.app/",
+            repoLink: "https://github.com/Mirza2231/Football_Dashboard"
         },
         {
             id: 3,
@@ -36,8 +36,8 @@ const projectsData = [
             image: FoodApp,
             description: "A responsive, pixel-perfect UI for a food delivery service with restaurant listings and cart management.",
             techStack: ["Html", "Css","Javascript","Bootstrap"],
-            liveLink: "#",
-            repoLink: "#"
+            liveLink: "https://ornate-stardust-40c993.netlify.app/",
+            repoLink: "https://github.com/Mirza2231/Restaurant_Web"
         }
     ];
 
@@ -52,7 +52,7 @@ const projectsData = [
                             Selected <span className="text-accent">Works.</span>
                         </h2>
                     </div>
-                    <a href="https://github.com/yourusername" target="_blank" className="hidden md:flex items-center gap-2 text-text-gray hover:text-white transition-colors font-bold uppercase text-sm tracking-wider mt-6 md:mt-0">
+                    <a href="https://github.com/Mirza2231" target="_blank" className="hidden md:flex items-center gap-2 text-text-gray hover:text-white transition-colors font-bold uppercase text-sm tracking-wider mt-6 md:mt-0">
                         View GitHub <FaArrowRight  />
                     </a>
                 </div>
@@ -68,8 +68,8 @@ const projectsData = [
                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                             />
                             <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                                <a href={pData.liveLink} className="w-10 h-10 bg-accent text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Live"><FaLink /></a>
-                                <a href={pData.repoLink} className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Code"><FaGithub /></a>
+                                <a href={pData.liveLink} className="w-10 h-10 bg-accent text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Live" target='_blank'><FaLink /></a>
+                                <a href={pData.repoLink} className="w-10 h-10 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-transform" title="View Code" target='_blank'><FaGithub /></a>
                             </div>
                         </div>
                         <div className="p-6">

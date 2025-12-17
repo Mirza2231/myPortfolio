@@ -1,4 +1,5 @@
 import React from 'react'
+// import "../../assests/"
 
 const About = () => {
 
@@ -54,7 +55,8 @@ const About = () => {
                             )))}
 
                         </div>
-                        <a href="#" className="inline-flex items-center gap-2 text-accent font-bold uppercase tracking-wide border-b border-accent pb-1 hover:text-white hover:border-white transition-colors">
+                        <a href="/assets/MirzaFarazAliBaig.pdf" 
+                        download="MirzaFarazAliBaig(Frontend_Developer).pdf" className="inline-flex items-center gap-2 text-accent font-bold uppercase tracking-wide border-b border-accent pb-1 hover:text-white hover:border-white transition-colors">
                             Download CV <i className="fa-solid fa-download" />
                         </a>
                     </div>

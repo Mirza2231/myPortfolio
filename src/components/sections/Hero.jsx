@@ -17,7 +17,10 @@ const Hero = () => {
                         Designing innovative web solutions that shape the future of digital interaction. Specialized in MERN Stack and
                         high-end UI/UX.
                     </p>
-                    <a href="#contact" className="bg-accent text-black px-8 py-3 md:px-10 md:py-4 rounded-full font-bold inline-flex items-center gap-2 mt-4 transition-all hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(204,255,0,0.4)]">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=iammirzafarazali@gmail.com"
+                        // 'target="_blank"' ensures it opens in a new tab, not the same one
+                        target="_blank"
+                        rel="noopener noreferrer" className="bg-accent text-black px-8 py-3 md:px-10 md:py-4 rounded-full font-bold inline-flex items-center gap-2 mt-4 transition-all hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(204,255,0,0.4)]">
                         Let's Talk <i className="fas fa-arrow-right" />
                     </a>
                 </div>

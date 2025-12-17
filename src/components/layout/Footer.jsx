@@ -13,7 +13,9 @@ const Footer = () => {
                     <p className="text-text-gray text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
                         I'm currently available for freelance projects. If you need a modern website or a powerful web application, let's discuss it.
                     </p>
-                    <a href="mailto:contact@faraz.dev" className="group relative inline-flex items-center justify-center gap-3 bg-accent text-black font-black uppercase tracking-widest py-5 px-12 rounded-full overflow-hidden transition-transform hover:scale-105 shadow-[0_0_40px_rgba(204,255,0,0.4)]">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=iammirzafarazali@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer" className="group relative inline-flex items-center justify-center gap-3 bg-accent text-black font-black uppercase tracking-widest py-5 px-12 rounded-full overflow-hidden transition-transform hover:scale-105 shadow-[0_0_40px_rgba(204,255,0,0.4)]">
                         <span className="relative z-10">Say Hello</span>
                         <FaPaperPlane className=" relative z-10 group-hover:translate-x-1 transition-transform" />
                     </a>
@@ -24,8 +26,8 @@ const Footer = () => {
                         <p className="text-gray-600 text-xs">Built with Next.js &amp; Tailwind</p>
                     </div>
                     <div className="flex gap-8">
-                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaGithub className="fa-brands fa-github" /></a>
-                        <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaLinkedin className="fa-brands fa-linkedin" /></a>
+                        <a href="https://github.com/Mirza2231" target='_blank' className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaGithub className="fa-brands fa-github" /></a>
+                        <a href="https://www.linkedin.com/in/mirza-faraz-ali-baig-522500268/" target='_blank' className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaLinkedin className="fa-brands fa-linkedin" /></a>
                         <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><FaInstagram className="fa-brands fa-instagram" /></a>
                         {/* <a href="#" className="text-gray-400 hover:text-accent text-xl transition-all hover:-translate-y-1"><i className="fa-brands fa-twitter" /></a> */}
                     </div>

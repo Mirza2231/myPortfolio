@@ -23,13 +23,13 @@ const Stats = () => {
                     <div className="flex items-center gap-6 md:border-l border-white/10 md:pl-10">
                         <span className="text-xs font-bold uppercase text-accent tracking-widest hidden lg:block">Connect</span>
                         <div className="flex gap-4">
-                            <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
+                            <a href="https://github.com/Mirza2231" target='_blank' className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
                                 <FaGithub className=" text-xl" />
                             </a>
-                            <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
+                            <a href="https://www.linkedin.com/in/mirza-faraz-ali-baig-522500268/" target='_blank' className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
                                 <FaLinkedin className="text-xl" />
                             </a>
-                            <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
+                            <a href="#"  className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:bg-accent hover:text-black hover:border-accent hover:scale-110 transition-all duration-300">
                                 <FaInstagram className="text-xl" />
                             </a>
                         </div>
