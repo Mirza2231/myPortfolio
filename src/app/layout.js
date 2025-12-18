@@ -1,6 +1,7 @@
 import localFont from "next/font/local"; 
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
+import Cursor from "@/components/layout/Cursor";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <head>
      </head>
       <body className={`${montserrat.variable} ${poppins.variable} font-sans antialiased selection:bg-accent selection:text-black`}>
+       <Cursor />
         {children}
       </body>
     </html>
