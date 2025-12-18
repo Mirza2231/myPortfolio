@@ -24,7 +24,7 @@ const TechStack = () => {
   ]
 
   return (
-    <section className="py-32 border-t border-white/5">
+    <section id='skills' className="py-32 border-t border-white/5">
       
       {/* Header Animation */}
       <motion.div 

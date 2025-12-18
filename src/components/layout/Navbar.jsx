@@ -26,10 +26,11 @@ const Navbar = () => {
 
             {/* Desktop Menu (Hidden on Mobile) */}
             <ul className="hidden md:flex gap-10 list-none">
-                <li><a href="#home" className="text-white text-sm font-medium hover:text-accent transition-colors">Home</a></li>
+                <li><a href="#" className="text-white text-sm font-medium hover:text-accent transition-colors">Home</a></li>
                 <li><a href="#about" className="text-white text-sm font-medium hover:text-accent transition-colors">About</a></li>
                 <li><a href="#services" className="text-white text-sm font-medium hover:text-accent transition-colors">Services</a></li>
                 <li><a href="#projects" className="text-white text-sm font-medium hover:text-accent transition-colors">Projects</a></li>
+                <li><a href="#skills" className="text-white text-sm font-medium hover:text-accent transition-colors">Skills</a></li>
                 <li><a href="#contact" className="text-white text-sm font-medium hover:text-accent transition-colors">Contact</a></li>
             </ul>
 
@@ -48,6 +49,7 @@ const Navbar = () => {
                 <a onClick={closeNav} href="#about" className="text-white hover:text-accent font-bold uppercase tracking-widest transition-colors">About</a>
                 <a onClick={closeNav} href="#services" className="text-white hover:text-accent font-bold uppercase tracking-widest transition-colors">Services</a>
                 <a onClick={closeNav} href="#projects" className="text-white hover:text-accent font-bold uppercase tracking-widest transition-colors">Projects</a>
+                <a onClick={closeNav} href="#skills" className="text-white hover:text-accent font-bold uppercase tracking-widest transition-colors">Skills</a>
                 <a onClick={closeNav} href="#contact" className="text-white hover:text-accent font-bold uppercase tracking-widest transition-colors">Contact</a>
             </div>
         </nav>
