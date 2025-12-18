@@ -21,7 +21,7 @@ const Projects = () => {
         },
         {
             id: 2,
-            title: "Football Dash",
+            title: "Football Dashboard",
             category: "Analytics Panel",
             image: dashboardImage,
             description: "Real-time data visualization dashboard for tracking Players, Previous Matches, and team performances.",
