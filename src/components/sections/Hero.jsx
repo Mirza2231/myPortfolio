@@ -20,8 +20,9 @@ const Hero = () => {
                         <span className="outline-text">FUTURE.</span>
                     </h1>
                     <p className="text-text-gray max-w-lg mb-8 mx-auto md:mx-0 text-sm md:text-base">
-                        Designing innovative web solutions that shape the future of digital interaction. Specialized in MERN Stack and
-                        high-end UI/UX.
+                        {/* Designing innovative web solutions that shape the future of digital interaction. Specialized in MERN Stack and
+                        high-end UI/UX. */}
+                        I build high-performance web solutions that help businesses automate their operations and scale their revenue.
                     </p>
                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=iammirzafarazali@gmail.com"
                         // 'target="_blank"' ensures it opens in a new tab, not the same one
